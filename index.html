@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV Martin Ruiz Ptaskin</title>
-    <meta name="description" content="Realizamos el proyecto y desarrollo de sitios web institucionales y autogestionables. Tenemos experiencia, eficacia y clientes que nos recomiendan. Solicite presupuesto.">
-    <meta name="author" content="www.aldeaglobal.com.ar">
+    
     <link rel="icon" href="https://aldeaglobal.com.ar/favicon.ico">
  	<link href="index/css" rel="stylesheet">
     <link rel="stylesheet" href="index/plugins.min.css" type="text/css" media="screen">
     <link rel="stylesheet" href="index/estiloAG.css" type="text/css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
-
-<script type="text/javascript" async="" src="index/recaptcha__es.js.descarga" crossorigin="anonymous" integrity="sha384-ihZ8DjKw6R9I7EvuzAc68I0rtwG/tsFHGs5Fq3cKD4Addx6WRrwQIsY4hWU8yJHq"></script><script src="index/api.js.descarga"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
+
         // For Google ReCaptcha
 		function enabledSubmit(response) {
 			 document.getElementsByName('enviar')[0].removeAttribute("disabled");
@@ -28,7 +29,36 @@
     background-color: #ccc;
     cursor:default;
 }   
+@media (max-width: 370px) {
+  .inline-menu li {
+    padding: 0 6px;
+  }
+  .inline-menu  {
+        display: flex;
+    width: 100%;
+    justify-content: space-between;
+    float: none;
+  }
+}
+
  </style>  
+ <style type="text/css">
+     .exp{
+        .display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px;
+        margin-top: 10px;
+
+     }
+     .exp p{
+        padding: 0px;
+     }
+     .exp::after{
+        background-color: green;
+     }
+
+ </style>
 </head>
 
 <body>
@@ -76,7 +106,7 @@
                 <div class="blog-block  menu-block">
                     <div class="blog-block-container">
                         <h2 class="blog menu-item">Experiencia</h2>
-                    </div>
+                       </div>
                 </div>
                 <div class="contact-block  menu-block">
                     <div class="contact-block-container">
@@ -160,27 +190,71 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
             </div>
             <div class="content-blocks portfolio">
                 <section class="content">
-                    <div class="block-content">
-                        <h3 class="block-title">Estudios</h3>
+                    <div class="block-content" >
+                        <h3 class="block-title" style=" padding-bottom: 0px;border-bottom: 1px solid #ddd; margin-bottom: 0px;">Estudios</h3>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="filters">
-                                	<p>Estudios secundarios: Colegio Galileo Galilei(2013-2018).<br/>
-                                	Estudios universitarios: Licenciatura en Sistemas de Información de las Organizaciones (2018-actualidad) Universidad de Buenos Aires.<br/>
-                                	Estudios en desarrollo y programación:<br/>
-                                Web development.<br/>
-                                <i style="font-size: 8px;" class="fas fa-circle"></i> HTML. <br/>
+                                     <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Formación
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <i style="font-size: 8px;" class="fas fa-circle"></i> Estudios secundarios: Colegio Galileo Galilei(2013-2018). <br/>
+                                 <i style="font-size: 8px;" class="fas fa-circle"></i> Estudios universitarios: Licenciatura en Sistemas de Información de las Organizaciones (2018-actualidad) Universidad de Buenos Aires.<br/>
+                                
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Web development
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <i style="font-size: 8px;" class="fas fa-circle"></i> HTML. <br/>
                                  <i style="font-size: 8px;" class="fas fa-circle"></i> CSS.<br/>
                                 <i style="font-size: 8px;" class="fas fa-circle"></i> Java Script<br/>
-                                <br/>
-                               back end y analisis de datos:<br/>
-                                <i style="font-size: 8px;" class="fas fa-circle"></i> PHP.<br/>
-                                <i style="font-size: 8px;" class="fas fa-circle"></i> Python.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Back-end y Analisis de Datos:
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <i style="font-size: 8px;" class="fas fa-circle"></i> PHP.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> Python.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> JAVA.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> SQL.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> Groovt.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> Angular.<br/>
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> TS.<br/>  
+                                <i style="font-size: 8px;" class="fas fa-circle"></i> linux.<br/>
+
+      </div>
+    </div>
+  </div>
+</div>
+                                	
+                                
+                               
+                               
                                 	<div style="display: flex;justify-content: center;width: 100%;"><h3>Certificados</h3> </div>
 
                                 	 </p>
                                    
                                 </div>
+                               
                                 <div class="portfolio-container row isotope" id="portfolio-container">
                                     
                                     <!-- WORK 9 START -->
@@ -199,6 +273,36 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
                                             </div>
                                         </a>
                                     </div>
+                                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item web"><a class="open-project" href="https://aldeaglobal.com.ar/proyecto05.html">
+                                        
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>SQL</h2>
+                                                        <hr>
+                                                        <p>Ver detalles</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="index/sql.jpg" alt="sql"> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item web"><a class="open-project" href="https://aldeaglobal.com.ar/proyecto05.html">
+                                        
+                                            <div class="portfolio-column">
+                                                <div class="portfolio-hover">
+                                                    <div class="portfolio-content">
+                                                        <h2>DOCKER</h2>
+                                                        <hr>
+                                                        <p>Ver detalles</p>
+                                                    </div>
+                                                    <div class="portfolio-overlay"></div>
+                                                </div>
+                                                <img src="index/docker.jpg" alt="docker"> 
+                                            </div>
+                                        </a>
+                                    </div>
                                     <!-- WORK 9 END -->
                                     <!-- WORK 10 START -->
                                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item redes"><a class="open-project" href="https://aldeaglobal.com.ar/proyecto05.html">
@@ -212,7 +316,7 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
                                                     </div>
                                                     <div class="portfolio-overlay"></div>
                                                 </div>
-                                                <img src="index/PHP.jpeg" alt="Spectra Tattoo Laser"> 
+                                                <img src="index/PHP.jpeg" alt="Certificados"> 
                                         </a>
                                     </div>
                                     <!-- WORK 10 END -->
@@ -228,7 +332,7 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
                                                     </div>
                                                     <div class="portfolio-overlay"></div>
                                                 </div>
-                                                <img src="index/html.jpeg" alt="Spectra Tattoo Laser"> 
+                                                <img src="index/html.jpeg" alt="Certificados"> 
                                         </a>
                                     </div>
                                     </div>
@@ -244,7 +348,7 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
                                                     </div>
                                                     <div class="portfolio-overlay"></div>
                                                 </div>
-                                                <img src="index/java.jpeg" alt="Spectra Tattoo Laser"> 
+                                                <img src="index/java.jpeg" alt="certificados"> 
                                         </a>
                                     </div>
                                 </div>
@@ -265,17 +369,26 @@ Los frutos de dichos cambios no se hicieron esperar. Luego vino la recomendació
                                         <h2></h2>
                                     </div>
                                     <div class="post-body">
+                                          <div class="exp">
+                                        <p><span style="font-size:1.1rem; font-weight: bold;">NTT-DATA (2020- -):</span><br>
+                                            Análisis de incidencias de la aplicación SADE orientada a la gestión de los tramites del Gobierno. Se realizaban búsquedas de errores en servidores remotos de arquitectura linux, análisis de errores en BBDD – SQL y se aplicaban regulatorios de los mismos.
+Se realiza la creación de entornos de desarrollo con sistemas dockerizados.
 
-                                        <p><span style="font-size:1.1rem; font-weight: bold;">Market Textil (2019-2021):</span><br>
+</div>
+                                        <div class="exp">
+                                        <p><span style="font-size:1.1rem; font-weight: bold;">Market Textil (2019-2020):</span><br>
 Control y organización de inventario. Sistematización de los procesos.
-gestión de reclamos y ventas. Atención al cliente y despacho de la mercadería vendida mediante plataformas web y redes sociales. <br/><br>
-
-<span style="font-size:1.1rem; font-weight: bold;">Sanatorio Otamendi Miroli</span><br>
+gestión de reclamos y ventas. Atención al cliente y despacho de la mercadería vendida mediante plataformas web y redes sociales. 
+</div>
+<div class="exp">
+<span style="font-size:1.1rem; font-weight: bold;">Sanatorio Otamendi Miroli (2018-2019)</span><br>
  Forme parte del equipo de desarrollo orientado a la elaboración del “Portal de empleados”,  plataforma orientada a mejorar la comunicación entre la empresa y sus empleados, en la misma puede encontrar su recibo de sueldo, notificaciones de la empresa y formularios para la solicitud y la carga de licencias y solicitudes especiales.  <br/><br>
+ </div>
+ <div class="exp">
 <span style="font-size:1.1rem; font-weight: bold;">Desarrollo web Freelance</span><br>
 Gestión y maquetación de diferentes paginas web para particulares (utilizando tecnologías tales como JavaScript, PHP y HTML).
 </p>
-                                        <!--
+    </div>                                    <!--
                                                 <p>      Universitarios<br/>
 •   Licenciatura en Sistemas de Información de las Organizaciones (UBA 2019-hasta la actualidad)
 
@@ -367,10 +480,12 @@ Español: Nativo <br/>
             </div>
             <div class="content-blocks pop">
             	<div id="close-pop" class="close-pop">Cerrar <i class="ion-ios-close-empty"></i></div>
-                <div style="display: flex;justify-content: center;align-items: center;width: 100%;height: 100%;flex-direction: column; margin-top: 200px;"><img style="height: 33%;"  src="index/PHP.jpeg"><br />
-                	<img style="height: 33%;"  src="index/PHP.jpeg"><br />
+                <div style="display: flex;justify-content: center;align-items: center;width: 100%;height: auto;flex-direction: column; margin-top: 200px;"><img style="height: 33%;"  src="index/PHP.jpeg"><br />
+                	<img style="height: 33%;"  src="index/java.jpeg"><br />
                 	<img style="height: 33%;"  src="index/html.jpeg"><br />
                 	<img style="height: 33%;"  src="index/css.jpeg">
+                    <img style="height: 33%;"  src="index/docker.jpg">
+                    <img style="height: 33%;"  src="index/sql.jpg">
 
 
 
@@ -381,6 +496,7 @@ Español: Nativo <br/>
     </section>
     <script src="index/plugins.min.js.descarga"></script>
     <script src="index/main.js.descarga"></script>
+ 
 
 
 <div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="index/bframe.html" name="c-lrxhmnr6r2kk" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
